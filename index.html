@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Restauran.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Order Form</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="fill">Fill in your details</h2>
+        <form>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            
+            <label>Gender:</label>
+            <div>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+            </div>
+
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            
+            <label>Order Type:</label>
+            <div>
+                <label><input type="checkbox" name="orderType" value="shawarma"> Shawarma</label>
+                <label><input type="checkbox" name="orderType" value="zinger"> Zinger</label>
+                <label><input type="checkbox" name="orderType" value="burger"> Burger</label>
+            </div>
+
+            
+            <label>Order Option:</label>
+            <div>
+                <label><input type="radio" name="orderOption" value="combo" required> Combo</label>
+                <label><input type="radio" name="orderOption" value="sandwich" required> Sandwich</label>
+            </div>
+
+            <label for="imageUrl">Image URL:</label>
+            <input type="url" id="imageUrl" name="imageUrl" placeholder="Enter image URL" required>
+
+            
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+
+    <script src="Restauran.js"></script>
+</body>
+
+</html>
